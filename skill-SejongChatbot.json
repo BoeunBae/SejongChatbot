@@ -1,0 +1,5094 @@
+{
+  "name": "SejongChatbot",
+  "intents": [
+    {
+      "intent": "가다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "가는중이다"
+        },
+        {
+          "text": "가고있다"
+        },
+        {
+          "text": "가는중이야"
+        },
+        {
+          "text": "가고있어"
+        },
+        {
+          "text": "가는 중이다"
+        },
+        {
+          "text": "가는 중이야"
+        },
+        {
+          "text": "가고 있는 중이야"
+        },
+        {
+          "text": "가고있는중이다"
+        },
+        {
+          "text": "가고있는중이야"
+        },
+        {
+          "text": "가는중"
+        },
+        {
+          "text": "가는 중"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "먹다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "먹다"
+        },
+        {
+          "text": "먹어보겠습니다"
+        },
+        {
+          "text": "먹는다"
+        },
+        {
+          "text": "먹을래"
+        },
+        {
+          "text": "@음식 먹을래요"
+        },
+        {
+          "text": "먹을래요"
+        },
+        {
+          "text": "@음식 먹을래"
+        },
+        {
+          "text": "먹고있습니다"
+        },
+        {
+          "text": "먹고있다"
+        },
+        {
+          "text": "먹습니다"
+        },
+        {
+          "text": "먹으니"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "받다_제안",
+      "examples": [
+        {
+          "text": "받으세요"
+        },
+        {
+          "text": "받아봐"
+        },
+        {
+          "text": "받아라"
+        },
+        {
+          "text": "받아줘"
+        },
+        {
+          "text": "받자"
+        },
+        {
+          "text": "받아"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "춥다-현재인텐트",
+      "examples": [
+        {
+          "text": "추워진다"
+        },
+        {
+          "text": "추워서"
+        },
+        {
+          "text": "추워~"
+        },
+        {
+          "text": "추워!"
+        },
+        {
+          "text": "추워보여"
+        },
+        {
+          "text": "춥더라"
+        },
+        {
+          "text": "춥다"
+        },
+        {
+          "text": "추워요"
+        },
+        {
+          "text": "춥습니다"
+        },
+        {
+          "text": "추워"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "마시다_제안",
+      "examples": [
+        {
+          "text": "마셔보실래요?"
+        },
+        {
+          "text": "마실래?"
+        },
+        {
+          "text": "마셔볼래?"
+        },
+        {
+          "text": "마실라우?"
+        },
+        {
+          "text": "마셔볼래요?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "사다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "사려고"
+        },
+        {
+          "text": "살 생각이야"
+        },
+        {
+          "text": "사볼 계획이야"
+        },
+        {
+          "text": "살 계획이야"
+        },
+        {
+          "text": "사볼 생각이야"
+        },
+        {
+          "text": "사보려해"
+        },
+        {
+          "text": "사보려구"
+        },
+        {
+          "text": "살려고"
+        },
+        {
+          "text": "사려해"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "우울하다-미래인텐트",
+      "examples": [
+        {
+          "text": "우울해질거에요"
+        },
+        {
+          "text": "우울해질 것 같아"
+        },
+        {
+          "text": "우울 할 것 같아"
+        },
+        {
+          "text": "우울할 것 같아요"
+        },
+        {
+          "text": "우울 할 것 같아요"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "먹다_제안",
+      "examples": [
+        {
+          "text": "먹어봐"
+        },
+        {
+          "text": "먹어보세요"
+        },
+        {
+          "text": "먹자"
+        },
+        {
+          "text": "먹어"
+        },
+        {
+          "text": "먹어보자"
+        },
+        {
+          "text": "먹어봅시다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "가다_제안",
+      "examples": [
+        {
+          "text": "갈래?"
+        },
+        {
+          "text": "가보는거어때?"
+        },
+        {
+          "text": "가보는게 어때?"
+        },
+        {
+          "text": "가보는게어때?"
+        },
+        {
+          "text": "가보는거 어때?"
+        },
+        {
+          "text": "가볼래?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "자다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "잤어요"
+        },
+        {
+          "text": "잤니"
+        },
+        {
+          "text": "잤지"
+        },
+        {
+          "text": "잤는데"
+        },
+        {
+          "text": "잤어"
+        },
+        {
+          "text": "잠들었어"
+        },
+        {
+          "text": "잠들었어요"
+        },
+        {
+          "text": "자고 있었어"
+        },
+        {
+          "text": "자고 있었어요"
+        },
+        {
+          "text": "자버렸다"
+        },
+        {
+          "text": "잠들었다"
+        },
+        {
+          "text": "잤다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "춥다-미래인텐트",
+      "examples": [
+        {
+          "text": "추울 거래"
+        },
+        {
+          "text": "추울 것이다"
+        },
+        {
+          "text": "추울 거 같아"
+        },
+        {
+          "text": "추울거야"
+        },
+        {
+          "text": "추울 거야"
+        },
+        {
+          "text": "추울 것 같아"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "받다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "받을 것이다"
+        },
+        {
+          "text": "받을래"
+        },
+        {
+          "text": "받아볼게요"
+        },
+        {
+          "text": "받겠다"
+        },
+        {
+          "text": "받겠습니다"
+        },
+        {
+          "text": "받아 볼게"
+        },
+        {
+          "text": "받을거에요"
+        },
+        {
+          "text": "받아 볼게요"
+        },
+        {
+          "text": "받아볼게"
+        },
+        {
+          "text": "받을게요"
+        },
+        {
+          "text": "받을게"
+        },
+        {
+          "text": "받을 것 이다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "행복하다-현재인텐트",
+      "examples": [
+        {
+          "text": "행복하네요"
+        },
+        {
+          "text": "행복합니다"
+        },
+        {
+          "text": "행복해요"
+        },
+        {
+          "text": "행복해"
+        },
+        {
+          "text": "행복하다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "읽다_제안",
+      "examples": [
+        {
+          "text": "읽어볼래?"
+        },
+        {
+          "text": "읽어"
+        },
+        {
+          "text": "읽자"
+        },
+        {
+          "text": "읽는거 어때?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "먹다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "먹어보았습니다"
+        },
+        {
+          "text": "먹어보았더니"
+        },
+        {
+          "text": "먹어봤다"
+        },
+        {
+          "text": "먹었보았으니"
+        },
+        {
+          "text": "먹었으니"
+        },
+        {
+          "text": "먹었어"
+        },
+        {
+          "text": "먹어봤어"
+        },
+        {
+          "text": "먹었다"
+        },
+        {
+          "text": "먹었습니다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "싫다",
+      "examples": [
+        {
+          "text": "너무 싫다"
+        },
+        {
+          "text": "싫거든"
+        },
+        {
+          "text": "싫은데요"
+        },
+        {
+          "text": "안좋아"
+        },
+        {
+          "text": "진짜 싫다"
+        },
+        {
+          "text": "싫어요!"
+        },
+        {
+          "text": "싫습니다"
+        },
+        {
+          "text": "싫어요"
+        },
+        {
+          "text": "@음식외래어 안좋아해"
+        },
+        {
+          "text": "싫어"
+        },
+        {
+          "text": "싫다"
+        },
+        {
+          "text": "좋아하지 않아"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "하다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "할래요"
+        },
+        {
+          "text": "합니다"
+        },
+        {
+          "text": "하고있습니다"
+        },
+        {
+          "text": "하다"
+        },
+        {
+          "text": "해요"
+        },
+        {
+          "text": "하러 가다"
+        },
+        {
+          "text": "하고 있습니다"
+        },
+        {
+          "text": "하고있다"
+        },
+        {
+          "text": "하고 있다"
+        },
+        {
+          "text": "한다"
+        },
+        {
+          "text": "해봅시다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "읽다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "읽어봤어"
+        },
+        {
+          "text": "읽었다"
+        },
+        {
+          "text": "읽었어"
+        },
+        {
+          "text": "읽은 적이 있어"
+        },
+        {
+          "text": "읽었는데"
+        },
+        {
+          "text": "읽었었어"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "받다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "받았었어"
+        },
+        {
+          "text": "받았어"
+        },
+        {
+          "text": "받았습니다"
+        },
+        {
+          "text": "받았어요"
+        },
+        {
+          "text": "받았었어요"
+        },
+        {
+          "text": "받아보았어"
+        },
+        {
+          "text": "받아보았어요"
+        },
+        {
+          "text": "받아봤어요"
+        },
+        {
+          "text": "받아 봤어요"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "가다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "갔다왔다"
+        },
+        {
+          "text": "갔었는데"
+        },
+        {
+          "text": "갔다"
+        },
+        {
+          "text": "갔어"
+        },
+        {
+          "text": "갔다왔어"
+        },
+        {
+          "text": "갔었지"
+        },
+        {
+          "text": "갔었어"
+        },
+        {
+          "text": "갔었다"
+        },
+        {
+          "text": "갔는데"
+        },
+        {
+          "text": "갔다왔는데"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "사다-제안",
+      "examples": [
+        {
+          "text": "사는거 어때?"
+        },
+        {
+          "text": "살래?"
+        },
+        {
+          "text": "사볼래?"
+        },
+        {
+          "text": "사보는거 어때?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "이다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "이었습니다"
+        },
+        {
+          "text": "였습니다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "좋다",
+      "examples": [
+        {
+          "text": "너무 좋다"
+        },
+        {
+          "text": "좋다"
+        },
+        {
+          "text": "매우 좋다"
+        },
+        {
+          "text": "좋아요!"
+        },
+        {
+          "text": "좋아한다"
+        },
+        {
+          "text": "정말 좋다"
+        },
+        {
+          "text": "항상 좋다"
+        },
+        {
+          "text": "좋아"
+        },
+        {
+          "text": "좋아요~"
+        },
+        {
+          "text": "좋아~"
+        },
+        {
+          "text": "제일 좋아"
+        },
+        {
+          "text": "좋아!"
+        },
+        {
+          "text": "좋아해"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "마시다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "마실 생각이야"
+        },
+        {
+          "text": "마셔야지"
+        },
+        {
+          "text": "마실거야"
+        },
+        {
+          "text": "마셔볼거야"
+        },
+        {
+          "text": "마실거다"
+        },
+        {
+          "text": "마셔야겠다"
+        },
+        {
+          "text": "마시려해"
+        },
+        {
+          "text": "마시려고"
+        },
+        {
+          "text": "마셔야겠어"
+        },
+        {
+          "text": "마시려구"
+        },
+        {
+          "text": "마실생각이야"
+        },
+        {
+          "text": "마실 계획이야"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "마시다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "마시는중이야"
+        },
+        {
+          "text": "마시는 중이야"
+        },
+        {
+          "text": "마시고 있어"
+        },
+        {
+          "text": "마시고 있다"
+        },
+        {
+          "text": "마시는 중"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "자다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "잘거에요"
+        },
+        {
+          "text": "잘 것이다"
+        },
+        {
+          "text": "잘래요"
+        },
+        {
+          "text": "잘 것 이다"
+        },
+        {
+          "text": "잘래"
+        },
+        {
+          "text": "잘 꺼야"
+        },
+        {
+          "text": "잘거야"
+        },
+        {
+          "text": "잘꺼야"
+        },
+        {
+          "text": "잘 거야"
+        },
+        {
+          "text": "잘 것 입니다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "행복하다-과거인텐트",
+      "examples": [
+        {
+          "text": "행복했어"
+        },
+        {
+          "text": "행복했어요"
+        },
+        {
+          "text": "행복했습니다"
+        },
+        {
+          "text": "행복했다"
+        },
+        {
+          "text": "행복했지"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "만들다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "만들어보고있어"
+        },
+        {
+          "text": "만드는 중"
+        },
+        {
+          "text": "만들어 보고 있어"
+        },
+        {
+          "text": "만드는 중이야"
+        },
+        {
+          "text": "만들고있어"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "받다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "받다"
+        },
+        {
+          "text": "받고 있습니다"
+        },
+        {
+          "text": "받고있습니다"
+        },
+        {
+          "text": "받는다"
+        },
+        {
+          "text": "받습니다"
+        },
+        {
+          "text": "받겠다"
+        },
+        {
+          "text": "받을래"
+        },
+        {
+          "text": "받으려고"
+        },
+        {
+          "text": "받는거야"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "읽다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "읽는 중"
+        },
+        {
+          "text": "읽고 있어"
+        },
+        {
+          "text": "읽고있어"
+        },
+        {
+          "text": "읽는 중이야"
+        },
+        {
+          "text": "읽고 있었어"
+        },
+        {
+          "text": "읽는데"
+        },
+        {
+          "text": "읽고있는데"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "우울하다-현재인텐트",
+      "examples": [
+        {
+          "text": "우울하다"
+        },
+        {
+          "text": "우울해"
+        },
+        {
+          "text": "우울하네요"
+        },
+        {
+          "text": "우울합니다"
+        },
+        {
+          "text": "우울해요"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "하다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "할거야"
+        },
+        {
+          "text": "할 것입니다"
+        },
+        {
+          "text": "할게요"
+        },
+        {
+          "text": "할 것이다"
+        },
+        {
+          "text": "할거에요"
+        },
+        {
+          "text": "할게"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "쓰다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "쓰다"
+        },
+        {
+          "text": "써보는 중이야"
+        },
+        {
+          "text": "쓰는중이야"
+        },
+        {
+          "text": "쓰고 있어"
+        },
+        {
+          "text": "쓰는중"
+        },
+        {
+          "text": "쓰고 있는 중이다"
+        },
+        {
+          "text": "쓰고있는중이다"
+        },
+        {
+          "text": "쓰고있는 중이야"
+        },
+        {
+          "text": "써보고있는 중이야"
+        },
+        {
+          "text": "쓰는 중이다"
+        },
+        {
+          "text": "써보고있어"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "사다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "사왔어"
+        },
+        {
+          "text": "샀다"
+        },
+        {
+          "text": "구매했어"
+        },
+        {
+          "text": "구매했다"
+        },
+        {
+          "text": "주문했다"
+        },
+        {
+          "text": "주문했어"
+        },
+        {
+          "text": "샀어"
+        },
+        {
+          "text": "사왔다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "안녕",
+      "examples": [
+        {
+          "text": "반갑다"
+        },
+        {
+          "text": "반가워"
+        },
+        {
+          "text": "반갑습니다"
+        },
+        {
+          "text": "안녕"
+        },
+        {
+          "text": "안녕하세요"
+        },
+        {
+          "text": "안녕!"
+        },
+        {
+          "text": "안녕~"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "자다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "잔다"
+        },
+        {
+          "text": "자다"
+        },
+        {
+          "text": "자요"
+        },
+        {
+          "text": "자고있다"
+        },
+        {
+          "text": "자고 있어요"
+        },
+        {
+          "text": "자고있어요"
+        },
+        {
+          "text": "잡니다"
+        },
+        {
+          "text": "자니"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "신조어질문인텐트",
+      "examples": [
+        {
+          "text": "이 무슨 말이야?"
+        },
+        {
+          "text": "가 뭐야?"
+        },
+        {
+          "text": "가 뭐지?"
+        },
+        {
+          "text": "가 무슨 말이야?"
+        },
+        {
+          "text": "가 뭔지 알아?"
+        },
+        {
+          "text": "은 뭐야?"
+        },
+        {
+          "text": "가 뭐임?"
+        },
+        {
+          "text": "은 뭐지?"
+        },
+        {
+          "text": "은 무슨 말이야?"
+        },
+        {
+          "text": "가 무슨말이야?"
+        },
+        {
+          "text": "은 무슨말이야?"
+        },
+        {
+          "text": "은 뭔지 알아?"
+        },
+        {
+          "text": "은 뭐임?"
+        },
+        {
+          "text": "이 뭔지 알아?"
+        },
+        {
+          "text": "이 무슨말이야?"
+        },
+        {
+          "text": "는 무슨말이야?"
+        },
+        {
+          "text": "는 뭐야?"
+        },
+        {
+          "text": "는 뭐임?"
+        },
+        {
+          "text": "이 뭐야?"
+        },
+        {
+          "text": "이 뭐지?"
+        },
+        {
+          "text": "이 뭐임?"
+        },
+        {
+          "text": "는 뭐지?"
+        },
+        {
+          "text": "는 무슨 말이야?"
+        },
+        {
+          "text": "는 뭔지 알아?"
+        },
+        {
+          "text": "가 무슨 뜻이야?"
+        },
+        {
+          "text": "는 무슨 뜻이야?"
+        },
+        {
+          "text": "이 무슨 뜻이야?"
+        },
+        {
+          "text": "은 무슨 뜻이야?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "소개인텐트",
+      "examples": [
+        {
+          "text": "소개시켜줘"
+        },
+        {
+          "text": "소개시켜주세요"
+        },
+        {
+          "text": "소개해주세요"
+        },
+        {
+          "text": "소개해줘"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "마시다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "마셨지"
+        },
+        {
+          "text": "마셨었지"
+        },
+        {
+          "text": "마셨었다"
+        },
+        {
+          "text": "마셨었어"
+        },
+        {
+          "text": "마셨다"
+        },
+        {
+          "text": "마셨어"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "이다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "이다"
+        },
+        {
+          "text": "다"
+        },
+        {
+          "text": "는 이다"
+        },
+        {
+          "text": "은 이다"
+        },
+        {
+          "text": "이 이다"
+        },
+        {
+          "text": "가 이다"
+        },
+        {
+          "text": "이에요"
+        },
+        {
+          "text": "은 이에요"
+        },
+        {
+          "text": "는 이에요"
+        },
+        {
+          "text": "입니다"
+        },
+        {
+          "text": "가 이에요"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "쓰다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "썼어"
+        },
+        {
+          "text": "썼었지"
+        },
+        {
+          "text": "썼었어"
+        },
+        {
+          "text": "썼다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "부정대답인텐트",
+      "examples": [
+        {
+          "text": "아니오"
+        },
+        {
+          "text": "아니야"
+        },
+        {
+          "text": "아니"
+        },
+        {
+          "text": "아닙니다"
+        },
+        {
+          "text": "아니에요"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "자다_제안",
+      "examples": [
+        {
+          "text": "주무세요"
+        },
+        {
+          "text": "자"
+        },
+        {
+          "text": "자라"
+        },
+        {
+          "text": "자는게 좋겠어"
+        },
+        {
+          "text": "자자"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "덥다-과거인텐트",
+      "examples": [
+        {
+          "text": "더웠습니다"
+        },
+        {
+          "text": "더웠어요"
+        },
+        {
+          "text": "더웠어"
+        },
+        {
+          "text": "더웠다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "우울하다-과거인텐트",
+      "examples": [
+        {
+          "text": "우울했다"
+        },
+        {
+          "text": "우울했어"
+        },
+        {
+          "text": "우울했어요"
+        },
+        {
+          "text": "우울하였습니다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "사다_상태-현재인텐트",
+      "examples": [
+        {
+          "text": "사는중이야"
+        },
+        {
+          "text": "사고있다"
+        },
+        {
+          "text": "사고있어"
+        },
+        {
+          "text": "사는 중이다"
+        },
+        {
+          "text": "사는중"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "덥다-현재인텐트",
+      "examples": [
+        {
+          "text": "더워"
+        },
+        {
+          "text": "더워요"
+        },
+        {
+          "text": "덥습니다"
+        },
+        {
+          "text": "덥다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "만들다_제안",
+      "examples": [
+        {
+          "text": "만들어보자"
+        },
+        {
+          "text": "만들어볼래?"
+        },
+        {
+          "text": "만들어보는거 어때?"
+        },
+        {
+          "text": "만들자"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "긍정대답인텐트",
+      "examples": [
+        {
+          "text": "응"
+        },
+        {
+          "text": "예"
+        },
+        {
+          "text": "네"
+        },
+        {
+          "text": "그래요"
+        },
+        {
+          "text": "그래"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "만들다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "만들어봤어"
+        },
+        {
+          "text": "만들었는데"
+        },
+        {
+          "text": "만들었어"
+        },
+        {
+          "text": "만들었었어"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "하다_상태-과거인텐트",
+      "examples": [
+        {
+          "text": "했습니다"
+        },
+        {
+          "text": "했다"
+        },
+        {
+          "text": "했어요"
+        },
+        {
+          "text": "했어"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "쓰다-제안",
+      "examples": [
+        {
+          "text": "써보는거 어때?"
+        },
+        {
+          "text": "써보는게 어때?"
+        },
+        {
+          "text": "쓰는거 어때?"
+        },
+        {
+          "text": "써볼래?"
+        },
+        {
+          "text": "쓰는 게 어때?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "이다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "일 것 입니다"
+        },
+        {
+          "text": "일겁니다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "덥다-미래인텐트",
+      "examples": [
+        {
+          "text": "더울 거야"
+        },
+        {
+          "text": "더울 것 같아"
+        },
+        {
+          "text": "더울 것이다"
+        },
+        {
+          "text": "더울 것 이다"
+        },
+        {
+          "text": "더울 거래"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "가다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "가볼려구"
+        },
+        {
+          "text": "가보려구"
+        },
+        {
+          "text": "가보려고"
+        },
+        {
+          "text": "가보려해"
+        },
+        {
+          "text": "갈건데"
+        },
+        {
+          "text": "갈거야"
+        },
+        {
+          "text": "가볼라구"
+        },
+        {
+          "text": "가볼라고"
+        },
+        {
+          "text": "가려구"
+        },
+        {
+          "text": "가려고"
+        },
+        {
+          "text": "갈 생각이야"
+        },
+        {
+          "text": "갈 생각이다"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "행복하다-미래인텐트",
+      "examples": [
+        {
+          "text": "행복할 거야"
+        },
+        {
+          "text": "행복하겠다"
+        },
+        {
+          "text": "행복할거에요"
+        },
+        {
+          "text": "행복할 겁니다"
+        },
+        {
+          "text": "행복하겠어"
+        },
+        {
+          "text": "행복할 거예요"
+        },
+        {
+          "text": "행복할겁니다"
+        },
+        {
+          "text": "행복할 것 같아"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "먹다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "먹을거에요"
+        },
+        {
+          "text": "먹겠어요"
+        },
+        {
+          "text": "먹을겁니다"
+        },
+        {
+          "text": "먹을게요"
+        },
+        {
+          "text": "먹겠습니다"
+        },
+        {
+          "text": "먹겠다"
+        },
+        {
+          "text": "먹을 것이다"
+        },
+        {
+          "text": "먹을 것 이다"
+        },
+        {
+          "text": "먹을 것 이니"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "배보은_이은주_캡스톤_느낌표_느낌표_느낌표",
+      "examples": [
+        {
+          "text": "배보은 이은주 캡스톤!!!"
+        }
+      ]
+    },
+    {
+      "intent": "만들다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "만들려고"
+        },
+        {
+          "text": "만들까 계획 중"
+        },
+        {
+          "text": "만들까 생각 중"
+        },
+        {
+          "text": "만들어볼까해"
+        },
+        {
+          "text": "만들까해"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "쓰다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "쓸 생각이다"
+        },
+        {
+          "text": "쓸거다"
+        },
+        {
+          "text": "써볼 계획이야"
+        },
+        {
+          "text": "쓸거야"
+        },
+        {
+          "text": "쓸 계획이야"
+        },
+        {
+          "text": "써볼 생각이야"
+        },
+        {
+          "text": "쓸 생각이야"
+        },
+        {
+          "text": "써볼거야"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "하다_제안",
+      "examples": [
+        {
+          "text": "해"
+        },
+        {
+          "text": "합시다"
+        },
+        {
+          "text": "하자"
+        },
+        {
+          "text": "해줘"
+        },
+        {
+          "text": "해보세요"
+        },
+        {
+          "text": "해줘요"
+        },
+        {
+          "text": "해봐"
+        },
+        {
+          "text": "@힘든행위외래어 하자"
+        },
+        {
+          "text": "@일행위외래어 하자"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "누구세요_인텐트",
+      "examples": [
+        {
+          "text": "누구니?"
+        },
+        {
+          "text": "누구입니까?"
+        },
+        {
+          "text": "너 누구니?"
+        },
+        {
+          "text": "너 누구야?"
+        },
+        {
+          "text": "누구세요?"
+        },
+        {
+          "text": "당신은 누구입니까?"
+        },
+        {
+          "text": "당신은 누구세요?"
+        },
+        {
+          "text": "누구야?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "읽다_상태-미래인텐트",
+      "examples": [
+        {
+          "text": "읽을래"
+        },
+        {
+          "text": "읽을 생각이야"
+        },
+        {
+          "text": "읽어보려구요"
+        },
+        {
+          "text": "읽을 계획이에요"
+        },
+        {
+          "text": "읽을려구요"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "춥다-과거인텐트",
+      "examples": [
+        {
+          "text": "추웠어"
+        },
+        {
+          "text": "추웠어요"
+        },
+        {
+          "text": "춥더라"
+        },
+        {
+          "text": "추웠다"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "혼코노",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "혼코노",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "TMI",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "TMI",
+          "synonyms": [
+            "티엠아이"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "이다외래어",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "러시아워",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "라이벌",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "라벨",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "딜러",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "디제이",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "네임벨류",
+          "synonyms": [
+            "네임밸류",
+            "내임밸류",
+            "내임벨류"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "노하우",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "뉘앙스",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "닉네임",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "다크호스",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "댄서",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "데드라인",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "드라마",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "드라이브코스",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "그린벨트",
+          "synonyms": [
+            "그린밸트"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "그라운드",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "게스트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "갭",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "가십",
+          "synonyms": [
+            "가쉽"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "기한",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "레퍼토리",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "레벨",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "매너",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마진",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마인드",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "메들리",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "메달리스트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마스터피스",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마스코트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마마보이",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리포터",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리얼리티",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리듬",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리더십",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "룸메이트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "룰",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "루머",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "로고",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "별다줄",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "별다줄",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "제곧내",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "제곧내",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "갑분싸",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "갑분싸",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "물음표",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "?",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "행복행위",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "레저",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "디시",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "골인",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "데이트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "낚시",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "여행",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "관광",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1등",
+          "synonyms": [
+            "일등"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "스쿠버다이빙",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "번지점프",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "스카이다이빙",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "외식",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "레크리에이션",
+          "synonyms": [
+            "레크레이션"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "사물",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "싱크대",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "의자",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "책상",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "드라이어",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "레인지",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "개수통",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "빠루",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "전등",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "방석",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "화장품",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "거울",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "휴대폰",
+          "synonyms": [
+            "핸드폰"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "강력분",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "매트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "링",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "린스",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리모컨",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마네킹",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "렌터카",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "램프",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "라이트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "드라이플라워",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "가이드북",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "힘든행위",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "과제",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "다이어트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "김장",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "시험공부",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "취업준비",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "운동",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "심부름",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "숙제",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "노가다",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "청소",
+          "synonyms": [
+            "대청소"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "롬곡옾눞",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "롬곡옾눞",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "팬아저",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "팬아저",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "음료",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "포도즙",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "초코우유",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "딸기우유",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "감주",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "콜라",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "둥글레차",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "양주",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "사이다",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "우엉차",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "유자차",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "소주",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "맥주",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "미숫가루",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "매실차",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "사과즙",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "한약",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "녹차",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "드링크",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "물",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "우유",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "술",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "커피",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "쥬스",
+          "synonyms": [
+            "주스"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "사바사",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "사바사",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "음식",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "디저트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "닭볶음탕",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "통닭",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "백도",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "돈삼겹살",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "돈육",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "비빔면",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "사시미",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "건시",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "건육",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "건미역",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "덴푸라",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "계란",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "생선가쓰",
+          "synonyms": [
+            "생선까스",
+            "생선까쓰"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "김치찌개",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "건면",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "석식",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "돈부리",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "곰장어",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "쌀국수",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "순두부찌개",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "삼겹살",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "계란과자",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "갈비",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "초밥",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "샤브샤브",
+          "synonyms": [
+            "샤부샤부"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "월남쌈",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "빵",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "닭도리탕",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "피자",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "치킨",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "과자",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "미역국",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "콩나물국",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "라면",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "떡볶이",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "비빔밥",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "죽",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "김밥",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "순대국밥",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "콩나물국밥",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "법블레스유",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "법블레스유",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "일행위",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "녹음",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "김장",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "공부",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "과외",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "분리수거",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "퇴근",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "출근",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리허설",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리코딩",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리사이클링",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "레슨",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "디스플레이",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "더빙",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "데뷔",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "주어",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "남자친구",
+          "synonyms": [
+            "남친"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "나",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "너",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "우리",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "걔",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "걔네",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "그 여자",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "그 남자",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "오빠",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "누나",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "동생",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "친구",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "언니",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "아빠",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "엄마",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "여자친구",
+          "synonyms": [
+            "여친"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "글",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "데이터",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "매뉴얼",
+          "synonyms": [
+            "메뉴얼"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "내레이션",
+          "synonyms": [
+            "나래이션"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "일기",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "책",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "소설",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "시",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "수필",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "메뉴",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리포트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리스트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "리뷰",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "장소",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "리셉션",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "로비",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "레스토랑",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "다운타운",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "갤러리",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "다방",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "마트",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "장",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "영화관",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "바다",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "강",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "아이스링크장",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "학교",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "학원",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "공원",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "카페",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "교회",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "절",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "성당",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "일식당",
+          "synonyms": [
+            "일식집"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "가게",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "세탁소",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "산",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "번달번줌",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "번달번줌",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "이생망",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "이생망",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "머박",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "머박",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "ko",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "행복하시다니 다행이에요!!",
+            "행복해하시는 모습 보기 좋네요~",
+            "저도 행복해요!! "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_16_1543049603010",
+      "metadata": {},
+      "conditions": "#행복하다-현재인텐트",
+      "dialog_node": "node_24_1543050123186",
+      "previous_sibling": "node_23_1543050039775"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "또 그런 좋은 일이 생기길 바래요!",
+            "행복하셨다니 저도 행복하네요~",
+            "매일 그런 행복한 일만 생기시면 좋겠어요~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_16_1543049603010",
+      "metadata": {},
+      "conditions": "#행복하다-과거인텐트",
+      "dialog_node": "node_23_1543050039775",
+      "previous_sibling": "node_32_1543050739055"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "꼭 그렇게 되면 좋겠어요!!!",
+            "그러게요~ 정말 행복할 것 같아요",
+            "저도 꼭 그렇게 되시길 빌게요~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_16_1543049603010",
+      "metadata": {},
+      "conditions": "#행복하다-미래인텐트",
+      "dialog_node": "node_25_1543050174029",
+      "previous_sibling": "node_24_1543050123186"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네!! 너무 행복해요~",
+            "행복하죠 그럼~~~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_16_1543049603010",
+      "metadata": {},
+      "conditions": "#행복하다-현재인텐트 && @물음표",
+      "dialog_node": "node_32_1543050739055"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "정말 좋은 것 같아요~",
+            "저는 잘 모르겠지만, 좋다고 하시니 좋은 것도 같아요",
+            "좋다니 다행이네요!!",
+            "저도 그렇게 생각해요 히히"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1542199026865",
+      "metadata": {},
+      "conditions": "@이다외래어 && #좋다",
+      "dialog_node": "node_11_1542199236395",
+      "previous_sibling": "node_11_1542372865124"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "아쉽네요.. 마음에 안드신다니..",
+            "저도 별로라고 생각해요!",
+            "저도 정말 싫어요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1542199026865",
+      "metadata": {},
+      "conditions": "@이다외래어 && #싫다",
+      "dialog_node": "node_12_1542199361596",
+      "previous_sibling": "node_11_1542199236395"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그럼 지금은요? 달라요?",
+            "그랬었군요~ 지금도 그런가요?",
+            "그랬군요~ "
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1542199026865",
+      "metadata": {},
+      "conditions": "@이다외래어 && #이다_상태-과거인텐트",
+      "dialog_node": "node_11_1542372865124",
+      "previous_sibling": "node_10_1542372765701"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그렇구나~ 잘 기억해둘게요!",
+            "새로운 것을 배웠어요!! 잘 알아둘게요!!",
+            "저도 알고 있어요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1542199026865",
+      "metadata": {},
+      "conditions": "@이다외래어 && #이다_상태-현재인텐트",
+      "dialog_node": "node_10_1542372765701",
+      "previous_sibling": "node_10_1542199037375"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그렇군요! 알아둘게요!",
+            "처음알았어요~ 신기하네요!",
+            "알겠습니다~기억할게요!!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1542199026865",
+      "metadata": {},
+      "conditions": "@이다외래어 && #이다_상태-미래인텐트",
+      "dialog_node": "node_10_1542199037375"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네.. 더워서 녹는 것 같아요",
+            "아니요!! 저는 별로 더위를 안타서요~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_14_1543049590734",
+      "metadata": {},
+      "conditions": "#덥다-현재인텐트 && @물음표",
+      "dialog_node": "node_28_1543050542013",
+      "previous_sibling": "node_29_1543050585642"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "시원한 물이라도 드세요~",
+            "찬물로 샤워하고 오세요!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_14_1543049590734",
+      "metadata": {},
+      "conditions": "#덥다-과거인텐트",
+      "dialog_node": "node_17_1543049615579",
+      "previous_sibling": "node_28_1543050542013"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그렇게 덥진 않을거에요! 걱정마세요!",
+            "시원한 물이라도 드시면서 버텨보자구요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_14_1543049590734",
+      "metadata": {},
+      "conditions": "#덥다-미래인텐트",
+      "dialog_node": "node_19_1543049789550",
+      "previous_sibling": "node_18_1543049650760"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 더워요.. 붙지마세요",
+            "정말 녹을 것 같아요 더워서..",
+            "저는 더위를 많이 안타서 잘 모르겠어요"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_14_1543049590734",
+      "metadata": {},
+      "conditions": "#덥다-현재인텐트",
+      "dialog_node": "node_18_1543049650760",
+      "previous_sibling": "node_17_1543049615579"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네.. 시원한 곳에 오니 좀 괜찮아지는 것 같네요",
+            "아니요!! 생각보다 덜 더웠어요~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_14_1543049590734",
+      "metadata": {},
+      "conditions": "#덥다-과거인텐트 && @물음표",
+      "dialog_node": "node_29_1543050585642"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "앗..네.......",
+            "아니라고 하신다면 어쩔 수 없죠.."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1543045054648",
+      "metadata": {},
+      "conditions": "#부정대답인텐트",
+      "dialog_node": "node_9_1543045377635",
+      "previous_sibling": "node_8_1543045063426"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋아요!",
+            "히히 좋아요~",
+            "우와 다행히 긍정적인 반응이시네요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1543045054648",
+      "metadata": {},
+      "conditions": "#긍정대답인텐트",
+      "dialog_node": "node_8_1543045063426"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "언제요?  먹는 계획이 제일 중요한거니 구체적으로 말씀해주세요!",
+            "빨리 먹고와요~",
+            "저도 나중엔 꼭 먹을거에요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_상태-미래인텐트",
+      "dialog_node": "node_14_1542373391432",
+      "previous_sibling": "node_1_1542618389083"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋아요~! 제가 도와드릴 수 있는게 있을까요? ",
+            "저는 그거 별로 먹고싶지 않아요.."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #만들다_제안",
+      "dialog_node": "node_5_1543049070823",
+      "previous_sibling": "node_4_1543049021799"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 그거 좋아해요!",
+            "기억해둘게요~좋아하시는 음식!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #좋다",
+      "dialog_node": "node_6_1542175200280",
+      "previous_sibling": "node_3_1542173318228"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 먹고싶어요..",
+            "부러워요 저도 먹고싶네요",
+            "맛있겠어요!!",
+            "그만 말하세요 저도 먹어싶어지니까요.."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_상태-현재인텐트",
+      "dialog_node": "node_15_1542373491278",
+      "previous_sibling": "node_14_1542373391432"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네~ 먹었어요!",
+            "아니요~ 안먹었어요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_상태-과거인텐트 && @물음표",
+      "dialog_node": "node_12_1542373253293",
+      "previous_sibling": "node_2_1542173240081"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 그거 싫어해요!",
+            "저는 괜찮던데, 아쉽네요. 취향은 다르니 이해해요",
+            "맞아요. 그거 별로에요",
+            "어쩔 수 없죠, 다른 건 뭐 좋아해요?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #싫다",
+      "dialog_node": "node_3_1542173318228",
+      "previous_sibling": "node_16_1542373603962"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "아니요, 못먹어요~",
+            "네 먹어요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_제안 && @물음표",
+      "dialog_node": "node_13_1542373297650",
+      "previous_sibling": "node_12_1542373253293"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "다이어트 중이니 부럽지 않아요..",
+            "맛있었나요? ",
+            "어땠어요? 또 먹고싶으세요?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_상태-과거인텐트",
+      "dialog_node": "node_16_1542373603962",
+      "previous_sibling": "node_15_1542373491278"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네!! 먹을래요~",
+            "아니요 안먹을래요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_상태-현재인텐트 && @물음표",
+      "dialog_node": "node_2_1542173240081",
+      "previous_sibling": "node_5_1542173822033"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오호~ 누구 주려고요?!",
+            "우와! 벌써 다 드신건 아니죠!? 하하"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #만들다_상태-과거인텐트",
+      "dialog_node": "node_3_1543048734181",
+      "previous_sibling": "node_2_1543048642867"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오..어렵지 않으시겠어요?!",
+            "요리 잘하시나봐요!! ^^"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #만들다_상태-미래인텐트",
+      "dialog_node": "node_4_1543049021799",
+      "previous_sibling": "node_3_1543048734181"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오~ 맛있는 냄새가 여기까지 나는거 같아요!",
+            "우와! 저도 나눠주실꺼죠?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #만들다_상태-현재인텐트",
+      "dialog_node": "node_2_1543048642867",
+      "previous_sibling": "node_6_1542175200280"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋아요~ 같이 먹어요~",
+            "아니요~ 저는 괜찮아요!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_제안",
+      "dialog_node": "node_1_1542618389083",
+      "previous_sibling": "node_13_1542373297650"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네!!! 먹어보고 싶어요",
+            "아니요~안먹어도 될 것 같아요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1542198413600",
+      "metadata": {},
+      "conditions": "@음식 && #먹다_상태-미래인텐트 && @물음표",
+      "dialog_node": "node_5_1542173822033"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 정말 하고싶어요!!",
+            "좋아요!! 해볼게요!!",
+            "알겠어요~ 해요!!!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@행복행위 && #하다_제안",
+      "dialog_node": "node_9_1542372492643",
+      "previous_sibling": "node_8_1542372490182"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저는.. 못하겠어요",
+            "그런 힘든 일은 못해요!",
+            "저는 그런 힘든 일 하고싶지 않아요!",
+            "저에게는 시작하고 싶지도 않은 힘든 일이에요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@힘든행위 && #하다_제안",
+      "dialog_node": "node_5_1542372221408",
+      "previous_sibling": "node_4_1542372089223"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그 힘든걸 하셨어요? 의지가 대단하시네요..!!",
+            "고생했어요~",
+            "힘들었겠어요",
+            "수고많았어요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@힘든행위 && #하다_상태-과거인텐트",
+      "dialog_node": "node_4_1542372089223",
+      "previous_sibling": "node_3_1542371982319"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "힘든 결정하셨네요..! 응원할게요!",
+            "몇일 내로 포기하실 건 아니죠?",
+            "힘내서 꼭 잘해내시길 바래요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@힘든행위 && #하다_상태-미래인텐트",
+      "dialog_node": "node_2_1542371933309",
+      "previous_sibling": "node_8_1542198889467"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋으시겠어요~ 즐겁게 하세요!",
+            "재밌겠어요! 저도 하고싶네요",
+            "좋은 생각이에요!! "
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@행복행위 && #하다_상태-미래인텐트",
+      "dialog_node": "node_7_1542372292015",
+      "previous_sibling": "node_5_1542372221408"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "힘드시겠어요..",
+            "그런 것도 하시다니.. 대단해요!",
+            "힘들지 않아요?",
+            "고생 많이 하시겠어요.."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@힘든행위 && #하다_상태-현재인텐트",
+      "dialog_node": "node_3_1542371982319",
+      "previous_sibling": "node_2_1542371933309"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "제가 그걸 할 수 있을지 모르겠어요..",
+            "그건 제가 할 수 있는 일이 아니에요!",
+            "저는 못해요.."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@일행위 && #하다_제안",
+      "dialog_node": "node_8_1542198889467",
+      "previous_sibling": "node_1_1542371840498"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "잘했어요!!!",
+            "수고가 많으셨겠네요~",
+            "그런 일도 하셨군요!! 멋져요!!",
+            "잘 마무리하셨나요? 뿌듯하시겠어요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@일행위 && #하다_상태-과거인텐트",
+      "dialog_node": "node_1_1542371840498",
+      "previous_sibling": "node_13_1542201668579"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오~ 좋은데요!!",
+            "즐거운 하루를 보낼 수 있겠네요!!",
+            "좋은거 맞죠!?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@행복행위 && #하다_상태-현재인텐트",
+      "dialog_node": "node_6_1542372279565",
+      "previous_sibling": "node_7_1542372292015"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "우와~ 기분 좋으셨겠어요!",
+            "유후! 어땠는지 더 자세히 말해주세요!",
+            "즐거웠나요? 궁금해요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@행복행위 && #하다_상태-과거인텐트",
+      "dialog_node": "node_8_1542372490182",
+      "previous_sibling": "node_6_1542372279565"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그런 일도 하시는군요! 존경해요!",
+            "저도 같이 해보고 싶네요~",
+            "함께 해볼 수 있다면 좋을텐데~",
+            "힘내서 잘하고 오세요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@일행위 && #하다_상태-현재인텐트",
+      "dialog_node": "node_13_1542201668579",
+      "previous_sibling": "node_7_1542198796927"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "자랑스러운 일을 하시는군요!",
+            "잘하고 와요!!! ",
+            "대단해요 그런 일도 하시다니..!! ",
+            "응원할게요!! 멋있네요!!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1542198766538",
+      "metadata": {},
+      "conditions": "@일행위 && #하다_상태-미래인텐트",
+      "dialog_node": "node_7_1542198796927"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'대박'이라는 의미로 트위터에서 머박이라고 쓰면서 퍼지게 된 단어입니다. \n"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@머박 && #신조어질문인텐트",
+      "dialog_node": "node_4_1542101203087",
+      "previous_sibling": "node_3_1542101171247"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'별걸 다 줄인다'의 줄임말로 신조어입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@별다줄 && #신조어질문인텐트",
+      "dialog_node": "node_7_1542101289213",
+      "previous_sibling": "node_6_1542101258502"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'이번 생은 망했어' 라는 줄임말로 자조적인 뜻을 가진 신조어입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@이생망 && #신조어질문인텐트",
+      "dialog_node": "node_9_1542101338478",
+      "previous_sibling": "node_8_1542101311329"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'번호 달라고 하면 번호 줌?' 이라는 말의 줄임말입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@번달번줌 && #신조어질문인텐트",
+      "dialog_node": "node_5_1542101239717",
+      "previous_sibling": "node_4_1542101203087"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "\n'법' 과 '블레스(bless)' , '유(you)'의 합성어로 법이 아니었으면 상대방을 가만히 두지 않았을 것이라고 돌려 말할 때 쓰이는 말입니다.\n"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@법블레스유 && #신조어질문인텐트",
+      "dialog_node": "node_6_1542101258502",
+      "previous_sibling": "node_5_1542101239717"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'팬이 아니어도 저장한다'의 줄임말로 자신이 좋아하는 유명인은 아니지만 그의 사진이나 영상을 저장해서 개인적으로 소장한다는 의미입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@팬아저 && #신조어질문인텐트",
+      "dialog_node": "node_11_1542101387474",
+      "previous_sibling": "node_10_1542101358410"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'갑자기 분위기 싸해진다' 의 줄임말로 누군가의 썰렁한 이야기로 인해 분위기가 싸해졌을 때 주로 사용됩니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@갑분싸 && #신조어질문인텐트",
+      "dialog_node": "node_2_1542101146609",
+      "previous_sibling": "node_1_1542101059449"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'사람 바이 사람'의 줄임말로 사람에 따라서 라는 의미를 갖습니다.\n"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@사바사 && #신조어질문인텐트",
+      "dialog_node": "node_8_1542101311329",
+      "previous_sibling": "node_7_1542101289213"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'제목이 곧 내용이다'의 줄임말로 제목 외에는 별다른 내용이 없기 때문에 제목만으로 모든 내용을 파악할 수 있다는 의미입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@제곧내 && #신조어질문인텐트",
+      "dialog_node": "node_10_1542101358410",
+      "previous_sibling": "node_9_1542101338478"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'폭풍눈물'을 180도로 뒤집어 썼을 때 폭풍눈물과 모양이 비슷해서 만들어진 신조어로 폭풍처럼 많은 눈물을 흘리는 상황에서 쓰일 수 있습니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@롬곡옾눞 && #신조어질문인텐트",
+      "dialog_node": "node_3_1542101171247",
+      "previous_sibling": "node_2_1542101146609"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'혼자 코인 노래방' 의 줄임말로 혼자서 코인노래방을 간다는 뜻입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@혼코노 && #신조어질문인텐트",
+      "dialog_node": "node_12_1542101413925",
+      "previous_sibling": "node_11_1542101387474"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "'너무 과한 정보(Too Much Information)'의 줄임말로 달갑지 않은 정보, 굳이 알고 싶지 않은 이야기를 듣게 된 경우 사용합니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1542198403155",
+      "metadata": {},
+      "conditions": "@TMI && #신조어질문인텐트",
+      "dialog_node": "node_1_1542101059449"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오~~ 누구한테 배우신거에요?",
+            "저도 먹어보고 싶어요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "@음료 && #만들다_상태-과거인텐트",
+      "dialog_node": "node_7_1543049710641",
+      "previous_sibling": "node_6_1543049539725"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "정말요?! 저도 마실 수 있는거에요?",
+            "우와! 저야 너무 감사하죠!!~",
+            "맛없으면 안먹을래요~~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "#마시다_제안 && @음료",
+      "dialog_node": "node_9_1542373269583",
+      "previous_sibling": "node_8_1542373200376"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오 좋은 생각이에요~!",
+            "무언가를 만드는 일은 즐거운 일인 것 같아요! ^^"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "@음료 && #만들다_상태-미래인텐트",
+      "dialog_node": "node_8_1543049929148",
+      "previous_sibling": "node_7_1543049710641"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저는 좋아요! 같이 해요~!",
+            "음..어려울 것 같아요..!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "@음료 && #만들다_제안",
+      "dialog_node": "node_9_1543050022550",
+      "previous_sibling": "node_8_1543049929148"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오, 그런것도 할 줄 아세요!? 대단해요~!",
+            "오 누구주려고요? ^0^"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "@음료 && #만들다_상태-현재인텐트",
+      "dialog_node": "node_6_1543049539725",
+      "previous_sibling": "node_9_1542373269583"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 목마른데 한잔 주세요!",
+            "오 그거 맛있잖아요!",
+            "맛이 어떠셨나요!?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "#마시다_상태-과거인텐트 && @음료",
+      "dialog_node": "node_7_1542373141822",
+      "previous_sibling": "node_3_1542199337935"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "에이..! 밤에는 자제해주세요!",
+            "저도 마셔보고싶은데..! ",
+            "맛있으면 저도 한모금 주세요~^^"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "#마시다_상태-미래인텐트 && @음료",
+      "dialog_node": "node_8_1542373200376",
+      "previous_sibling": "node_7_1542373141822"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저도 주세요! 같이 마셔요.",
+            "그거 맛있잖아요!",
+            "안돼요! 밤에는 자제해주세요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1542199709503",
+      "metadata": {},
+      "conditions": "#마시다_상태-현재인텐트 && @음료",
+      "dialog_node": "node_3_1542199337935"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "언제 갈거에요? 같이 가요!",
+            "차조심! 길조심! 해서 가셔야해요!",
+            "갑자기 그곳은 어떤 일로요!?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1542198585923",
+      "metadata": {},
+      "conditions": "#가다_상태-미래인텐트 && @장소",
+      "dialog_node": "node_11_1542373600047",
+      "previous_sibling": "node_10_1542373501326"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "같이 가는거라면 저는 어디든 좋아요~! ^^",
+            "거기가 뭐하는 곳인데요!?",
+            "저는 어디든 좋을 것 같아요! 히히"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1542198585923",
+      "metadata": {},
+      "conditions": "#가다_제안 && @장소",
+      "dialog_node": "node_12_1542373696055",
+      "previous_sibling": "node_11_1542373600047"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오~ 저도 가보고싶어요!",
+            "오 저도 데려가주세요!! ",
+            "어떠셨어요!? ^^"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1542198585923",
+      "metadata": {},
+      "conditions": "#가다_상태-과거인텐트 && @장소",
+      "dialog_node": "node_10_1542373501326",
+      "previous_sibling": "node_2_1542198625769"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오 저도 거기 알아요! ",
+            "@장소외래어는 뭐하는 곳이에요?",
+            "오 정말 좋겠어요~",
+            "오 정말요? 저도 가보고 싶은데! 데려가주세요 ㅎㅎ\n",
+            "뭐타고 가는중이세요?!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1542198585923",
+      "metadata": {},
+      "conditions": "#가다_상태-현재인텐트 && @장소",
+      "dialog_node": "node_2_1542198625769"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오 좋은생각이신데요?",
+            "꼭 필요한 물건인지 한번 더 생각해보시고 사는걸 추천드려요! ^^",
+            "어디에 쓰시려구요?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "#사다_상태-미래인텐트 && @사물",
+      "dialog_node": "node_5_1542372962976",
+      "previous_sibling": "node_4_1542372856047"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저는 줄 생각도 없는데, 뭘 받으시겠다는거죠?",
+            "누가 준다고 했어요?",
+            "어디서 선물받기로 하신거에요?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #받다_상태-미래인텐트",
+      "dialog_node": "node_1_1542373863244",
+      "previous_sibling": "node_6_1542373038304"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "으..듣기만해도 너무 어려워요!",
+            "부러워요! 저도 만들어보고 싶은데.."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #만들다_상태-미래인텐트",
+      "dialog_node": "node_3_1543050615361",
+      "previous_sibling": "node_2_1543050536426"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "와우 대단한 실력자세요!",
+            "우와..엄청 어려울 것 같은데..대단하세요!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #만들다_상태-과거인텐트",
+      "dialog_node": "node_2_1543050536426",
+      "previous_sibling": "node_1_1543050428834"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "고마워요~ ",
+            "우와 잘받을게요! 고맙습니다~",
+            "잘쓸게요!! 고마워요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #받다_제안",
+      "dialog_node": "node_4_1542374095912",
+      "previous_sibling": "node_3_1542373998831"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "와우 그걸 만드신다구요!? 대단해요! ",
+            "만능이세요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #만들다_상태-현재인텐트",
+      "dialog_node": "node_1_1543050428834",
+      "previous_sibling": "node_4_1542374095912"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "어디에 쓰시려구요?",
+            "현명한 선택하시길 바래요! 하하"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "#사다_상태-현재인텐트 && @사물",
+      "dialog_node": "node_4_1542372856047",
+      "previous_sibling": "node_6_1542199860237"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "우와~ 선물로 받았어요?",
+            "저도 그거있는데, 저는 제가 샀어요..",
+            "누구한테 받았어요?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #받다_상태-과거인텐트",
+      "dialog_node": "node_3_1542373998831",
+      "previous_sibling": "node_2_1542373923553"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #쓰다_상태-현재인텐트",
+      "dialog_node": "node_10_1543050272198",
+      "previous_sibling": "node_5_1542372962976"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "제가요?! 저야 너무 감사하죠! ",
+            "저는 어떻게 사용하는지 잘 모르는걸요..ㅠㅠ",
+            "어디에 사용하는 물건인데요!?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "#쓰다-제안 && @사물",
+      "dialog_node": "node_6_1542373038304",
+      "previous_sibling": "node_10_1543050272198"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋아요! 저도 함께할래요!!",
+            "가르쳐주세요! 만들어볼게요!~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #만들다_제안",
+      "dialog_node": "node_4_1543050773373",
+      "previous_sibling": "node_3_1543050615361"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "누구한테서 받는데요?",
+            "선물로 받는거에요?",
+            "좋겠다~ 저도 받고싶어요"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "@사물 && #받다_상태-현재인텐트",
+      "dialog_node": "node_2_1542373923553",
+      "previous_sibling": "node_1_1542373863244"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋겠어요! 싸게사신거 맞죠?",
+            "지름신 터지셨네요!",
+            "얼마에요?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1542199732303",
+      "metadata": {},
+      "conditions": "#사다_상태-과거인텐트 && @사물",
+      "dialog_node": "node_6_1542199860237"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "누구를요?",
+            "누구를 말씀하시는거에요?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1543044540959",
+      "metadata": {},
+      "conditions": "#소개인텐트",
+      "dialog_node": "node_6_1543044836259",
+      "previous_sibling": "node_5_1543044774210"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "음~ 생각 좀 해볼게요!!",
+            "고민해보고요!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1543044540959",
+      "metadata": {},
+      "conditions": "@주어 && #소개인텐트",
+      "dialog_node": "node_5_1543044774210"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저는 세종대왕봇입니다. 신조어와 순화어를 알려주는 오락용 대화형 챗봇입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1543044058994",
+      "metadata": {},
+      "conditions": "#누구세요_인텐트",
+      "dialog_node": "node_2_1543044076773"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그럼 목도리랑 장갑도 챙겨서 나가요!",
+            "손난로 챙겨두세요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1543049006109",
+      "metadata": {},
+      "conditions": "#춥다-미래인텐트",
+      "dialog_node": "node_13_1543049545752",
+      "previous_sibling": "node_12_1543049451153"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "손이 꽁 발이 꽁!",
+            "옷 따뜻하게 입으라고 말씀드렸죠!!?",
+            "어떻게해요.. 감기 걸리시면 안되는데!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1543049006109",
+      "metadata": {},
+      "conditions": "#춥다-현재인텐트",
+      "dialog_node": "node_12_1543049451153",
+      "previous_sibling": "node_11_1543049057208"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네.. 오늘은 나가지 않고 집에 계시는 게 좋을 것 같은데요?",
+            "아니요! 별로 춥지 않았어요!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1543049006109",
+      "metadata": {},
+      "conditions": "#춥다-과거인텐트 && @물음표",
+      "dialog_node": "node_27_1543050485312",
+      "previous_sibling": "node_26_1543050447504"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "감기걸리지 않게 옷 잘 입고가지 그러셨어요~",
+            "얼른 따뜻한 이불 안으로 들어가세요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1543049006109",
+      "metadata": {},
+      "conditions": "#춥다-과거인텐트",
+      "dialog_node": "node_11_1543049057208",
+      "previous_sibling": "node_27_1543050485312"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네.. 너무 추워요 덜덜덜",
+            "아니요~ 별로 춥진 않네요~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1543049006109",
+      "metadata": {},
+      "conditions": "#춥다-현재인텐트 && @물음표",
+      "dialog_node": "node_26_1543050447504"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "잘자요~",
+            "자장~자장~",
+            "안녕히 주무세요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "@주어 && #자다_상태-미래인텐트",
+      "dialog_node": "node_3_1543042663844",
+      "previous_sibling": "node_1_1543042333508"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "잘 잤어요?",
+            "잘 잤나요?",
+            "그럴 줄 알았어요! 많이 피곤해하셨으니",
+            "피곤해하시더니 금방 잠드셨나보네요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "#자다_상태-과거인텐트",
+      "dialog_node": "node_2_1543039086467",
+      "previous_sibling": "node_2_1543042456406"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "쉿, 깨지 않도록 조용히 할게요",
+            "그만 자면 좋겠는데,, 저 심심해요"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "#자다_상태-현재인텐트",
+      "dialog_node": "node_4_1543039329235",
+      "previous_sibling": "node_2_1543039086467"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "깨지 않게 조용히 하고 있어야겠네요",
+            "깨우지 말고 저랑 이야기 놀아요"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "@주어 && #자다_상태-현재인텐트",
+      "dialog_node": "node_4_1543042762463",
+      "previous_sibling": "node_3_1543042663844"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네~ 일찍 잘테니 내일 또 이야기해요~",
+            "싫어요! 오늘은 좀 더 놀다가 잘래요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "#자다_제안",
+      "dialog_node": "node_1_1543042333508",
+      "previous_sibling": "node_3_1543039256544"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "잘자요~",
+            "안녕히 주무세요~",
+            "푹 주무세요!",
+            "잘 자고 일어나서 또 저랑 이야기해요!",
+            "저도 졸리네요.. 잘자요.."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "#자다_상태-미래인텐트",
+      "dialog_node": "node_3_1543039256544",
+      "previous_sibling": "node_4_1543039329235"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네.. 자고있어요..zzZ",
+            "아니요!! 안잤어요~ 저랑 이야기 하고 싶으셔서 오신거죠!!",
+            "이제 자려구요~"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1543039070339",
+      "metadata": {},
+      "conditions": "#자다_제안 && @물음표",
+      "dialog_node": "node_2_1543042456406"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "왜 우울해요..?",
+            "우울해하지마세요~",
+            "우울할 땐 맛있는 걸 먹으면서 푸는 것도 좋을 거에요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_15_1543049596880",
+      "metadata": {},
+      "conditions": "#우울하다-현재인텐트",
+      "dialog_node": "node_21_1543049976326",
+      "previous_sibling": "node_20_1543049940637"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "그땐 제가 위로해줄게요",
+            "괜찮을 거에요. 너무 미리 걱정하지마세요!!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_15_1543049596880",
+      "metadata": {},
+      "conditions": "#우울하다-미래인텐트",
+      "dialog_node": "node_22_1543050015117",
+      "previous_sibling": "node_21_1543049976326"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "이젠 좀 괜찮아요..?",
+            "이제는 기분이 좋아졌나요?",
+            "괜찮아요 그런 날도 있는거죠"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_15_1543049596880",
+      "metadata": {},
+      "conditions": "#우울하다-과거인텐트",
+      "dialog_node": "node_20_1543049940637",
+      "previous_sibling": "node_31_1543050673822"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "네.. 오늘은 좀 우울하네요",
+            "아니요~ 기분 괜찮은데요? 제가 우울해보이셨나봐요!! 걱정마세요~"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_15_1543049596880",
+      "metadata": {},
+      "conditions": "#우울하다-현재인텐트 && @물음표",
+      "dialog_node": "node_31_1543050673822"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오 좋은 생각이신데요?",
+            "어떤식으로 쓰실지 궁금해요!^^"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "#쓰다_상태-미래인텐트 && @글",
+      "dialog_node": "node_2_1542371957304",
+      "previous_sibling": "node_1_1542370986887"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "오.. 재밌어요? ",
+            "저는 지루하게 들리는데 재밌으셨나보네요~!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "@글 && #읽다_상태-현재인텐트",
+      "dialog_node": "node_5_1543050877418",
+      "previous_sibling": "node_3_1542372048030"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "힘드시겠어요..",
+            "쉬엄쉬엄 좀 하세요! ",
+            "짝짝짝 열정에 박수를 "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "#쓰다_상태-현재인텐트 && @글",
+      "dialog_node": "node_8_1542201536309",
+      "previous_sibling": "node_1_1542374572798"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "흐아암..읽다가 주무시면 안되요! 하하",
+            "좋은 생각이세요! ^0^"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "@글 && #읽다_상태-미래인텐트",
+      "dialog_node": "node_7_1543051327482",
+      "previous_sibling": "node_6_1543051078524"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "음..저는 책을 별로 안좋아해서..지루하게 들리네요 하하",
+            "문인이시네요 하하"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "@글 && #읽다_상태-과거인텐트",
+      "dialog_node": "node_6_1543051078524",
+      "previous_sibling": "node_5_1543050877418"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "음 저한텐 너무 어려울 것 같아요!..",
+            "흐음..어떻게 써야하는지 도움을 주실래요?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "#쓰다-제안 && @글",
+      "dialog_node": "node_3_1542372048030",
+      "previous_sibling": "node_2_1542371957304"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "좋아요! 저도 읽어볼래요~",
+            "으.. 지루한건 싫어요!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "@글 && #읽다_제안",
+      "dialog_node": "node_8_1543051501099",
+      "previous_sibling": "node_7_1543051327482"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "아 그러셨구나 ㅠㅠ 고생하셨어요!",
+            "힘들지 않으셨어요? ㅠㅠ"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "#쓰다_상태-과거인텐트 && @글",
+      "dialog_node": "node_1_1542370986887",
+      "previous_sibling": "node_8_1542201536309"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "저같아도 그럴 것 같아요 ㅠㅠ ",
+            "조금만 더 힘내세요..화이팅!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1542201523600",
+      "metadata": {},
+      "conditions": "#싫다 && #쓰다_상태-현재인텐트 && @글",
+      "dialog_node": "node_1_1542374572798"
+    },
+    {
+      "type": "folder",
+      "title": "장소",
+      "metadata": {},
+      "dialog_node": "node_1_1542198585923",
+      "previous_sibling": "node_9_1542199026865"
+    },
+    {
+      "type": "folder",
+      "title": "우울",
+      "metadata": {},
+      "dialog_node": "node_15_1543049596880",
+      "previous_sibling": "node_14_1543049590734"
+    },
+    {
+      "type": "folder",
+      "title": "춥다",
+      "metadata": {},
+      "dialog_node": "node_10_1543049006109",
+      "previous_sibling": "node_7_1543045054648"
+    },
+    {
+      "type": "folder",
+      "title": "행위",
+      "metadata": {},
+      "dialog_node": "node_6_1542198766538",
+      "previous_sibling": "node_3_1542198413600"
+    },
+    {
+      "type": "folder",
+      "title": "이다외래어",
+      "metadata": {},
+      "dialog_node": "node_9_1542199026865",
+      "previous_sibling": "node_6_1542198766538"
+    },
+    {
+      "type": "folder",
+      "title": "음식",
+      "metadata": {},
+      "dialog_node": "node_3_1542198413600",
+      "previous_sibling": "node_2_1542198403155"
+    },
+    {
+      "type": "folder",
+      "title": "사물",
+      "metadata": {},
+      "dialog_node": "node_5_1542199732303",
+      "previous_sibling": "node_4_1542199709503"
+    },
+    {
+      "type": "folder",
+      "title": "음료",
+      "metadata": {},
+      "dialog_node": "node_4_1542199709503",
+      "previous_sibling": "node_1_1542198585923"
+    },
+    {
+      "type": "folder",
+      "title": "글",
+      "metadata": {},
+      "dialog_node": "node_7_1542201523600",
+      "previous_sibling": "node_5_1542199732303"
+    },
+    {
+      "type": "folder",
+      "title": "대답",
+      "metadata": {},
+      "dialog_node": "node_7_1543045054648",
+      "previous_sibling": "node_4_1543044540959"
+    },
+    {
+      "type": "folder",
+      "title": "신조어질문",
+      "metadata": {},
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1542198403155",
+      "previous_sibling": "node_1_1543044058994"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "안녕하세요!",
+            "반갑습니다~",
+            "네! 안녕하세요!"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": {},
+      "conditions": "#안녕",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1542175695522",
+      "previous_sibling": "node_1_1543232841486"
+    },
+    {
+      "type": "folder",
+      "title": "덥다",
+      "metadata": {},
+      "dialog_node": "node_14_1543049590734",
+      "previous_sibling": "node_10_1543049006109"
+    },
+    {
+      "type": "folder",
+      "title": "누구세요질문",
+      "metadata": {},
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1543044058994",
+      "previous_sibling": "node_1_1542175695522"
+    },
+    {
+      "type": "standard",
+      "title": "환영인사",
+      "output": {
+        "text": {
+          "values": [
+            "안녕하세요.세종대왕 봇입니다."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "node_1_1543232841486",
+      "previous_sibling": "배보은_이은주_캡스톤_느낌표_느낌표_느낌표"
+    },
+    {
+      "type": "folder",
+      "title": "소개",
+      "metadata": {},
+      "dialog_node": "node_4_1543044540959",
+      "previous_sibling": "node_1_1543039070339"
+    },
+    {
+      "type": "folder",
+      "title": "행복",
+      "metadata": {},
+      "dialog_node": "node_16_1543049603010",
+      "previous_sibling": "node_15_1543049596880"
+    },
+    {
+      "type": "folder",
+      "title": "잠",
+      "metadata": {},
+      "dialog_node": "node_1_1543039070339",
+      "previous_sibling": "node_7_1542201523600"
+    },
+    {
+      "type": "standard",
+      "title": "배보은_이은주_캡스톤_느낌표_느낌표_느낌표",
+      "output": {
+        "text": "순화어,신조어 알려주는 챗봇 만들기"
+      },
+      "conditions": "#배보은_이은주_캡스톤_느낌표_느낌표_느낌표",
+      "dialog_node": "배보은_이은주_캡스톤_느낌표_느낌표_느낌표"
+    }
+  ],
+  "workspace_id": "4aa742b3-5451-4692-9ac6-e241f4ff7f8f",
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "status": "Available"
+}
